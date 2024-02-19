@@ -1,5 +1,5 @@
-// Bubble sort по возрастанию
-#include <iostream> 
+#include <iostream>
+#include <stdlib.h>
 
 using namespace std;
 
@@ -13,9 +13,7 @@ void sort(int numbers[], int n)
 		{
 			if(numbers[i] > numbers[j])
 			{
-				tmp = numbers[i];
-				numbers[i] = numbers[j];
-				numbers[j] = tmp;
+				swap(numbers[i], numbers[j]);
 			}
 		}
 	}
